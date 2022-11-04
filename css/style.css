@@ -51,7 +51,9 @@ div.profile{
 }
 
 .album-cards{
+    max-width: 1900px;
     padding: 1rem;
+    
 }
 
 .album-card img{
@@ -61,8 +63,8 @@ div.profile{
 }
 
 .album-card {
-    width: 18%;
-    max-width: 18%;
+    width: calc(100% / 6);
+    width: calc(100% / 6);
     padding: 1rem .4rem 1rem .4rem;
 
 }
@@ -73,7 +75,7 @@ div.profile{
 @media screen and (max-width:768px) {
     
     .album-card {
-        width: 25%;
+        width: calc(100% / 4);
         max-width:none;
        
     }
@@ -98,8 +100,16 @@ div.profile{
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:490px) {
     
+    header{
+        width: 55px;
+    }
+
+    main {
+        width: calc(100% - 55px);
+    }
+
     .album-card {
         width: 50%;
         max-width:none;
@@ -109,4 +119,6 @@ div.profile{
     .album-cards{
         flex-wrap: wrap;
     }
+
+
 }
