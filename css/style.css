@@ -51,8 +51,7 @@ div.profile{
 }
 
 .album-cards{
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding: 1rem;
 }
 
 .album-card img{
@@ -62,7 +61,52 @@ div.profile{
 }
 
 .album-card {
-    width: 15%;
-    max-width: 15%;
-    padding-left: 1rem;
+    width: 18%;
+    max-width: 18%;
+    padding: 1rem .4rem 1rem .4rem;
+
+}
+
+
+/* !RESPONSIVE MD */
+
+@media screen and (max-width:768px) {
+    
+    .album-card {
+        width: 25%;
+        max-width:none;
+       
+    }
+
+    .album-cards{
+        flex-wrap: wrap;
+    }
+}
+
+/* !RESPONSIVE S */
+
+@media screen and (max-width:576px) {
+    
+    .album-card {
+        width: 50%;
+        max-width:none;
+       
+    }
+
+    .album-cards{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:576px) {
+    
+    .album-card {
+        width: 50%;
+        max-width:none;
+       
+    }
+
+    .album-cards{
+        flex-wrap: wrap;
+    }
 }
