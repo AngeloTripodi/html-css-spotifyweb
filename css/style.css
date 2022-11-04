@@ -49,3 +49,20 @@ div.profile{
     background-color: #080b12;
     height: 100px;
 }
+
+.album-cards{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.album-card img{
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.album-card {
+    width: 15%;
+    max-width: 15%;
+    padding-left: 1rem;
+}
