@@ -65,9 +65,22 @@ footer{
 }
 
 .search-nav,
-.library-nav{
+.library-nav,
+.add-playlist{
     color: #7D7F83;
 }
+
+.add-playlist{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;    
+}
+
+.add-playlist p{
+    font-size: 1.1rem;
+}
+
 
 
 
@@ -76,6 +89,21 @@ footer{
     margin-right: .25rem;
 }
 
+.playlist-nav{
+    padding-top: 1.5rem;
+}
+
+.add-playlist{
+    padding: 1rem 0;
+}
+
+.fa-plus {
+    color: black;
+    background-color: #7D7F83;
+    padding: .6rem;
+    font-size: 30px;
+    margin-right: .5rem;
+}
 
 div.profile{
     background-color: #080b12;
@@ -106,6 +134,20 @@ ul.ul-nav-bar{
     list-style-type: none;
     flex-wrap: wrap;
     line-height: 3;
+}
+
+ul.ul-playlist-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 2.5;
+    
+}
+
+
+ul.ul-playlist-list li{
+    color: #7D7F83;
+    font-weight: 600;
 }
 
 ul.ul-nav-bar li{
