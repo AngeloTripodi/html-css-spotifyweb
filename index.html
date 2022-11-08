@@ -179,7 +179,7 @@
     </div>
 
     <footer class="flex flex-row-btw">
-        <div class="album-option flex">
+        <div class="album-option flex-center">
             <div class="album-info">
                 <img src="./img/sinister.jpeg" alt="">
             </div>
@@ -195,25 +195,34 @@
             </div>
         </div>
 
-        <div class="player">
+        <div class="player flex-col-center">
+            <div class="player-button flex-center">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            
             <div class="time-box flex-center">
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="sound-bar-white"></div>
-                <div class="sound-bar"></div>
-                
-
+                <p>0:25</p>
+                <div class="time-container flex-center">
+                <div class="time-bar-white"></div>
+                <i id="hover-dot" class="fa-solid fa-circle"></i>
+                <div class="time-bar"></div>
+                </div>
+                <p>4:35</p>
             </div>  
-        </div>
+    </div>
 
         <div class="sound-option flex">
             <i class="fa-solid fa-list-ul"></i>
             <i class="fa-solid fa-tv"></i>
                 <div class="sound-box flex-center">
                     <i class="fa-solid fa-volume-high"></i>
-                    <div class="sound-bar-white"></div>
+                    <div class="sound-bar-white flex"></div>
+                    <i id="hover-dot" class="fa-solid fa-circle"></i>
                     <div class="sound-bar"></div>
-                    
-
                 </div>
           
         </div>

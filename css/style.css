@@ -35,6 +35,7 @@ footer{
     position: relative;
     z-index: 3;
     padding: 0 1rem;
+    overflow-x: hidden;
 }
 
 .flex {
@@ -282,24 +283,89 @@ ul.ul-nav-bar li{
     margin-left: .5rem;
 }
 
-.sound-option i{
+.sound-option>i,
+.sound-box i:first-child{
     padding: 0 .5rem;
+}
+
+.player{
+    align-items: center;
+}
+
+.player-button{
+    margin-bottom: .75rem;
+}
+
+.player-button i{
+    padding: 0 .5rem;
+}
+
+.player-button i:nth-child(3){
+    font-size: 1.65rem;
+}
+
+.sound-box{
+    width: 10vw;
 }
 
 .sound-bar{
     background-color: #7D7F83;
     height: 5px;
-    width: calc(100% / 4);
+    width: 70%;
 }
 
 .sound-bar-white{
     background-color: white;
     height: 5px;
-    width: calc( 100% / 2);
+    width: 35%;
 }
 
-.time-box{
-    width: 300px; 
+
+
+.time-container{
+   width: 15vw;
+}
+
+.time-bar{
+    background-color: #7D7F83;
+    height: 5px;
+    width: 300px;
+    /* flex-grow: 1; */
+    width: 65%;
+}
+
+.time-bar-white{
+    background-color: white;
+    height: 5px;
+    /* width: 105px; */
+    width: 35%;
+}
+
+/* .time-bar-white:hover{
+    background-color:#adff2f ;
+} */
+
+#hover-dot{
+    display: none;
+}
+
+.time-box:hover #hover-dot,
+.sound-box:hover #hover-dot {
+    display: flex;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.time-box:hover .time-bar-white,
+.sound-box:hover .sound-bar-white{
+    background-color: #adff2f;
+}
+
+
+.time-box p{
+    padding: 0 1.5rem;
+    font-size: .7rem;
+    font-weight: bold;
 }
 
 
@@ -331,6 +397,38 @@ ul.ul-nav-bar li{
     .album-cards{
         flex-wrap: wrap;
     }
+
+    .album-info{
+        width: 40px;
+        margin-right: .5rem;
+
+    }
+    
+    .album-info img{
+        width: 100%;
+    }
+
+    .favourites{
+        flex-direction: column;
+    }
+    .favourites i{
+        padding: 0 .5rem;
+        color: #7D7F83;
+    }
+    
+    .favourites i:first-child{
+        padding-left: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .sound-option {
+        margin-left: 0;
+      }
+
+      div.sound-option >i,
+      .sound-box i:first-child{
+        padding: 0 .25rem;
+    }
 }
 
 @media screen and (max-width:490px) {
@@ -353,5 +451,8 @@ ul.ul-nav-bar li{
         flex-wrap: wrap;
     }
 
+    footer{
+        padding: 0 .5rem;
+    }
 
 }
