@@ -237,6 +237,10 @@ ul.ul-nav-bar li{
 
 }
 
+figure#round img{
+    border-radius: 50%;
+}
+
 .main-h1{
     padding-left: 1.4rem;
     padding-top: 2rem;
