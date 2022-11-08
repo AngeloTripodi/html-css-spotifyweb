@@ -94,6 +94,10 @@ h5{
     padding-bottom: 2rem;
 }
 
+#logo-img-s{
+    display: none;
+}    
+
 .home-nav,
 .search-nav,
 .library-nav{
@@ -103,6 +107,7 @@ h5{
     font-weight: bold;
     padding-bottom: .75rem;
 }
+
 
 .search-nav,
 .library-nav,
@@ -172,12 +177,18 @@ div.bottom-header{
     margin-right: .5rem;
 }
 
+
+
 div.profile{
     background-color: #080b12;
     height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 200px);
+    z-index: 2;
 }
 
 #upgrade{
@@ -197,7 +208,8 @@ div.profile{
 }
 
 .nav-bar{
-    padding: 1rem 1rem 0 1rem;
+    padding: 117px 1rem 0 1rem;
+
 }
 
 ul.ul-nav-bar{
@@ -229,6 +241,30 @@ ul.ul-nav-bar li{
     font-size: .9rem;
     font-weight: 600;
 
+}
+
+ul li:hover,
+.home-nav:hover,
+.search-nav:hover,
+.library-nav:hover,
+.add-playlist:hover,
+.install-app:hover,
+.fa-heart:hover,
+.fa-folder:hover{
+    color: white;
+}
+
+.fa-plus:hover{
+    background-color: white;
+}
+
+.album-name p:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.player-button .fa-circle-play:hover{
+    transform: scale(1.2);
 }
 
 .album-cards{
@@ -506,6 +542,46 @@ figure#round img{
     main {
         width: calc(100% - 55px);
     }
+
+    div.profile{
+        width: calc(100% - 55px);
+    }
+
+    #logo-img,
+    .home-nav p,
+    .search-nav p,
+    .library-nav p,
+    .install-app p,
+    #divider hr,
+    .account p{
+        display: none;
+    }    
+
+    #logo-img-s{
+        display: inline;
+        margin-bottom: 1rem;
+    }  
+
+
+    .icon-header-section,
+    #icon-install-app,
+    #icon-profile{
+        width: 100%;
+        margin-right: 0;
+        
+    }
+
+    #icon-install-app{
+        margin-left: -2px;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .playlist-nav{
+        display: none;
+    }
+
 
     .album-card {
         width: 50%;
