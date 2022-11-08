@@ -285,7 +285,7 @@ ul li:hover,
     bottom: 0;
     left: 0;
     right: 0;
-    height: calc(100% - 0.3rem);
+    height: calc(100% - 0.28rem);
     width: 100%;
     opacity: 0;
     transition: .3s ease;
@@ -301,7 +301,7 @@ ul li:hover,
     bottom: 0;
     left: 0;
     right: 0;
-    height: calc(100% - 0.3rem);
+    height: calc(100% - 0.28rem);
     width: 100%;
     opacity: 0;
     transition: .3s ease;
