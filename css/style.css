@@ -435,14 +435,12 @@ figure#round img{
     background-color: #7D7F83;
     height: 5px;
     width: 300px;
-    /* flex-grow: 1; */
     width: 65%;
 }
 
 .time-bar-white{
     background-color: white;
     height: 5px;
-    /* width: 105px; */
     width: 35%;
 }
 
