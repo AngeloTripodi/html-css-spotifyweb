@@ -188,11 +188,16 @@ div.profile{
     padding: .75rem 2.5rem;
     text-transform: uppercase;
     margin-right: 2rem;
-    border-style: solid ;
+    border-style: solid;
+    
+}
+
+#upgrade:hover{
+    transform: scale(1.1);
 }
 
 .nav-bar{
-    padding-top: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 ul.ul-nav-bar{
