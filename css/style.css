@@ -221,6 +221,15 @@ div.profile{
     margin-top: -6px;
 }
 
+#green-tag-vertical{
+    height: 29px;
+    width: 3px;
+    background-color: #adff2f;
+    margin-left: -16px;
+    margin-right: 12px;
+}
+
+
 ul.ul-nav-bar{
     display: flex;
     justify-content: center;
